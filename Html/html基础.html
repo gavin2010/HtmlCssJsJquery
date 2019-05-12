@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML基础</title>
+<base href="https://www.google.com" target="_blank">
+</head>
+<body>
+<a id="A4">A4锚点</><br>
+
+
+<h1>这是一个h1标题</h1>
+<h2>这是一个h2标题</h2>
+<h3>这是一个h3标题</h3>
+<p>我的第一个段落(p标签)</p>
+<a href="http://www.runoob.com">这是一个链接(a标签)</a><br><br>
+图片(head中使用了base标签, a标签和img标签中默认地址从该定义的地址开始)<img src="/images/logo.png" width="258" height="39" alt="无法加载显示此文字"/>
+
+<div>
+	<br>
+	<div>文本格式化:</div>
+	&nbsp;&nbsp;&nbsp;&nbsp;<b>加粗文本_b标签</b><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<strong>这个文本是加粗的_strong标签</strong><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<i>斜体文本_i标签</i><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<em>这个文本是斜体的_em标签</em><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<code>电脑自动输出_code标签</code><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<kbd>键盘输入_kbd标签</kbd><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<tt>打字机文本_tt标签</tt><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<samp>计算机代码样本_samp标签</samp><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<var>计算机变量_var标签</var><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<big>这个文本字体放大_big标签</big><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<small>这个文本是缩小的_small标签</small><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;这是 <sub> 下标_sub标签</sub> 和 <sup> 上标_sup标签</sup><br>    
+	&nbsp;&nbsp;&nbsp;&nbsp;<del>删除线_del标签</del>;&nbsp;&nbsp; <ins>下划线_ins标签</ins><br>    
+	&nbsp;&nbsp;&nbsp;&nbsp;<bdo dir="rtl">该段落文字从右到左显示_bdo标签</bdo><br>  
+	&nbsp;&nbsp;&nbsp;&nbsp;<q>Build a future where people live in harmony with nature.引用块标签_q标签,该段文字自动加上双引号</q><br>
+	<pre>   预格式文本(原样输出):
+			此例演示如何使用 pre 标签
+			对空行和    空格
+			进行控制
+	</pre><br>
+	<address>&nbsp;&nbsp;&nbsp;&nbsp; address标签:<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+		&nbsp;&nbsp;&nbsp;&nbsp;Visit us at:<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Example.com<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;Box 564, Disneyland<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;USA
+	</address><br>
+	
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;<abbr title="etcetera">etc.     &nbsp;&nbsp; (abbr标签_title属性,鼠标移上去显示完整提示)</abbr><br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;<acronym title="World Wide Web">WWW      &nbsp;&nbsp;(acronym标签_title属性,鼠标移上去显示完整提示)</acronym>
+</div><br>
+
+a标签：超链接、书签跳转<br>
+
+target="_blank(新窗口打开)|_self(本窗口)|_parent(父窗口)|_top(全屏窗口)|framename(指定name的窗口打开)" <br>
+<a href="https://www.baidu.com" target="_blank" >新窗口打开百度</><br>
+<a href="#A4">定位A4锚点<a/><br>
+<a href="">跳转head中base设置的默认跳转链接<a/><br><br>
+	
+
+head中的标签<br>
+&nbsp;&nbsp;&lt;title&gt;定义文档标题&lt;/title&gt; <br>
+&nbsp;&nbsp;&lt;style&gt;定义内部样式文档&lt;/style&gt;<br>
+&nbsp;&nbsp;&lt;link&gt;引用外部样式文档&lt;/link&gt;<br>
+&nbsp;&nbsp;&lt;script&gt;定义客户端脚本&lt;/script&gt;<br>
+&nbsp;&nbsp;&lt;base&gt;定义了页面a、imag等链接标签的默认链接地址&lt;/base&gt;<br>
+&nbsp;&nbsp;&lt;meta&gt;定义了HTML文档中的元数据&lt;/meta&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为搜索引擎定义关键词:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为网页定义描述内容:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="免费 Web & 编程 教程"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;定义网页作者:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="author" content="Runoob"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每30秒钟刷新当前页面:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="refresh" content="30"&gt;<br>
+<br/><br/>
+
+表格<br/>
+<table border="1">
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
+
+<br>
+<h4>无序列表:</h4>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h4>有序列表:</h4>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<h4>自定义列表:</h4>
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+</dl>
+
+
+</body>
+</html>
