@@ -156,6 +156,52 @@
 					font-size:14px;
 					border-top-style:none;
 				}
+				.opacityTest:hover{
+					opacity:0.5;
+				
+				
+				}
+				.opacityTest{
+					width:300px;
+					height:100px;
+					border:1px black solid;
+					text-align:center;
+					vertical-align: middle;
+					display:table-cell;
+				}
+				#mySearch{
+					width:300px;
+					height:30px;
+					border:2px solid #ccc;
+					background-color:white;
+					background-image:url("https://static.runoob.com/images/mix/searchicon.png");
+					background-repeat:no-repeat;
+					background-position:5px 5px;
+					padding:2px 30px;
+					font-size:16px;
+					border-radius:6px;
+					box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				
+				#mySearch:focus{
+					width:60%;
+					-webkit-transition: width 0.5s ease-in-out;/*Safari */
+ 				  transition: width 0.5s ease-in-out;
+				}
+				
+				#mytextarea{
+					  border: 2px solid #ccc;
+					  border-radius:4px;
+					  width: 50%;
+ 					  height: 150px;
+ 					  box-sizing: border-box;
+ 					  background-color: #f8f8f8;
+  					font-size: 16px;
+  					padding: 12px 20px;
+  					
+  					resize:none;
+				}
 			</style>
 	</head>
 	<body>
@@ -233,8 +279,30 @@
 						<div class="imgdesc">这里添加文本描述</div>
 					</a>
 			</div>
+		</div><br/><br/>
+		
+
+		
+		
+		<div style="clear:both"><br/><br/>
+			<div>透明度opacity</div>
+			<div>
+				<div class="opacityTest" >测试透明度的文字</div>
+				<img style="opacity:0.5" src="https://static.runoob.com/images/demo/demo3.jpg" height="100px" width="302px"/>
+			</div>
+		</div><br/><br/>
+
+
+		<div>
+			<form>
+				<input type="text" id="mySearch" name="mysearch" placeholder="搜索……"/>
+			</form>
+		</div><br/><br/>
+		
+		<div>
+			 <div>textarea 的resize=none设置不能调整大小</div>
+			 <div><textarea id="mytextarea"> 输入文字 </textarea></div>
+			 
 		</div>
-		
-		
 	</body>
 </html>
